@@ -1,254 +1,197 @@
+<!-------------------------------------------------
+  File: index.html
+  Description: Welcome to my portfolio, thank you for taking the time to checkout my code. The following layout my website and its components. Styles are applied externally.
+  Author: Henry Barber
+  Date: 09/26/2023
+-------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<head>
+  <!-- Meta information -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Tab Icons -->
-    <link
-      rel="h-logo"
-      sizes="180x180"
-      href="assets/icons/logo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/logo.png"
-    />
+  <!-- External CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Henry Barber | Software Engineer</title>
-  </head>
+  <!-- Favicon and logo -->
+  <link rel="h-logo" sizes="180x180" href="assets/icons/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo.png" />
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <img src="assets/icons/logo.png" alt="HLogo" loading="lazy" class="nav-img" />
+  <!-- External CSS library for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-      <a href="mailto:henrywbarber@gmail.com" class="email-link">
-        <div class="icon-content">
-          <img src="assets/icons/icons8-email-48.png" alt="Email Icon" class="email-icon">
-          <span>henrywbarber@gmail.com</span>
-        </div>
-      </a>
+  <!-- Page title -->
+  <title>Henry Barber | Software Engineer</title>
+</head>
 
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Logo -->
+    <img src="assets/icons/logo.png" alt="HLogo" loading="lazy" class="nav-img" />
+
+    <!-- Email link -->
+    <a href="mailto:henrywbarber@gmail.com" class="email-link">
+      <div class="icon-content">
+        <img src="assets/icons/icons8-email-48.png" alt="Email Icon" class="email-icon">
+        <span>henrywbarber@gmail.com</span>
+      </div>
+    </a>
+
+    <!-- Navigation links -->
+    <ul class="navigation">
+      <li><a href="#more-about" class="nav-link">
           <div class="icon-content">
             <img src="assets/icons/icons8-bookmark-48.png" alt="About Icon" class="email-icon">
-              <span>About</span>
+            <span>About</span>
           </div>
         </a></li>
 
-        <li><a href="#experiences" class="nav-link">
+      <li><a href="#skills" class="nav-link">
           <div class="icon-content">
-            <img src="assets/icons/icons8-document-48.png" alt="Experiences Icon" class="email-icon">
-              <span>Experiences</span>
+            <img src="assets/icons/icons8-document-48.png" alt="Skills Icon" class="email-icon">
+            <span>My Skills</span>
           </div>
         </a></li>
 
-        <li><a href="#projects" class="nav-link">
+      <li><a href="#projects" class="nav-link">
           <div class="icon-content">
             <img src="assets/icons/icons8-opened-folder-48.png" alt="Projects Icon" class="email-icon">
-              <span>Projects</span>
+            <span>Projects</span>
           </div>
         </a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
+    </ul>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <div class="bio animate__animated animate__shakeX hero-text">
-        <h2>Hello, I'm</h2>
-        <h2 class="bio-title-H">Henry</h2>
-        <h2 class="bio-title-B">Barber</h2>
-        <div class="bio-description">
-          <p class="bio-text">Welcome to my portfolio. I am a well rounded problem solver at the University of Wisconsin - Madison.  </p>
-          <p class="bio-text">Computer Science & Mathematics</p>
-          <p class="bio-text">Graduating May 2025</p>
-        </div>
+    <!-- Burger menu button for mobile -->
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <!-- Hero text and bio -->
+    <div class="bio animate__animated animate__shakeX hero-text">
+      <h2>Hello, I'm</h2>
+      <h2 class="bio-title-H">Henry</h2>
+      <h2 class="bio-title-B">Barber</h2>
+      <div class="bio-description">
+        <!-- Bio details -->
+        <p class="bio-text">Welcome to my portfolio!</p>
+        <p class="bio-text">I'm an aspiring problem solver at The University of Wisconsin - Madison. I'm currently pursing a Bachlor of Science in Computer Science along with a Minor in Mathematics; expecting to graduate in May of 2025.</p>
+        <p class="bio-text">Some of my interests outside of class consist of road biking, intramural sports with friends, and listening to music.</p>
       </div>
-      <div class="hero-img-container">
-        <img src="assets/images/portrait.jpg" alt="portrait" loading="lazy" class="hero-img" />
-        <div class="zoom-overlay"></div>
-      </div>
-    </section>
-
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Born and raised in the Wrigleyville area of Chicago, I attended Albert G. Lane Technical College Prepratory High School in Roscoe Village before moving to Madison, Wisconsin, to pursue a further education in Computer Science. My interest in STEM started from a young age, I attribute my interest to my middle school where I found myself learning 'Processing' in the fifth grade and later learning how to 3D model, 3D print, and lazer cut. I further explored this interests at Lane Tech, known for its cutting edge STEM programs. I was able to explore my interests in the schools maker lab and prove my skills in AP Computer Science-A. Now in Madison I find myself enjoying lake life, riding bikes throughout the areas great trails such as the Badger State Trail, and reading books at Lake Mendota's Memorial Union Terrace.  
-      </p>
-      <p>
-        n the past I have developed code for race cars competing in the real world. I’ve just completed an introductory course
-        in computer engineering, where I learned the functionality of computers at their most basic level. Currently, I am in
-        search of an internship position where I can learn to better collaborate to accomplish group projects that have reaching
-        effects. (I am in search of a [intership-type] position where I can learn X to accomplish Y.)
-      </p>
-      <p>
-        I was born and raised in Chicago, which means I’m excited for this upcoming NFL season. I’m also an avid biker, with my
-        longest bike ride being the Badger Challenge 100k. Additionally, I like traveling to new places, trying new foods, and
-        meeting new people. Outside of class, I enjoy playing intramural soccer and football with my friends, as well as being
-        outside whenever it’s not freezing. Finally, a fun fact about me is that my favorite food is chilaquiles.
-      </p>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2>My Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-c-48.svg"
-            alt="C++"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-java-48.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-python-48.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        
-        <div class="second-set animate__animated animate__pulse">
-          <img
-          src="assets/icons/icons8-mysql-48.svg"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-          />
-          <img
-          src="assets/icons/icons8-visual-studio-48.svg"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-jira-48.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">A Few Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/portrait.jpg"
-            alt="cfb-outcome"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">CFB Outcome Preditor</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/portrait.jpg"
-            alt="this-website"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">This Website!</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/portrait.jpg"
-            alt="more-coming"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Coming Soon!</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social in bottom right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-48.png"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-        /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-email-48.png"
-          alt="Email"
-          loading="lazy"
-          class="socicon"
-          sizes
-      /></a>
-      <a href="#" target="_blank"
-        ><img 
-          src="assets/icons/icons8-github-48.png" 
-          alt="Github" 
-          loading="lazy"
-          class="socicon"
-      /></a>
     </div>
 
-    <!-- Footer section -->
-    <footer>
-      <p>Henry Barber</p>
-    </footer>
+    <!-- Hero image and zoom overlay -->
+    <div class="hero-img-container">
+      <img src="assets/images/portrait.jpg" alt="portrait" loading="lazy" class="hero-img" />
+      <div class="zoom-overlay"></div>
+    </div>
+  </section>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+  <!-- More About Section -->
+  <section class="more-about" id="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Born and raised in the Wrigleyville area of Chicago, I attended Albert G. Lane Technical College Preparatory High
+      School in Roscoe Village before moving to Madison, Wisconsin, to pursue a further education in Computer Science.
+      My interest in STEM started from a young age, I attribute my interest to my middle school where I found myself
+      learning 'Processing' in the fifth grade and later learning how to 3D model, 3D print, and laser cut. I further
+      explored this interest at Lane Tech, known for its cutting-edge STEM programs. I was able to explore my interests
+      in the school's maker lab and prove my skills in AP Computer Science-A. 
+    </p>
+    <p>
+      Now in Madison, I find myself enjoying
+      lake life, riding bikes throughout the area's great trails such as the Badger State Trail, and reading books at
+      Lake Mendota's Memorial Union Terrace. So far, my longest bike ride has been the Badger Challenge 100k. I also enjoy exploring campus, I swear there are new buildings and resturants to check out every week. As of recent, I've been making a fool of myself in the intermural soccer, flag football, and volleyball leagues with my friends.
+    </p>
+  </section>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+
+    <!-- Skill icons -->
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-c-48.svg" alt="C++" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-java-48.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-python-48.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-mysql-48.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-visual-studio-48.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-jira-48.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">A Few Recent Projects</h2>
+    <div class="projects-container">
+      <!-- Project cards -->
+      <div class="project-container project-card">
+        <img src="assets/images/marginPredictor.png" alt="cfb-outcome" loading="lazy" class="project-pic" />
+        <h3 class="project-title">College Football Margin Predictor</h3>
+        <p class="project-details">
+          This project leverages the College Football Data (CFBD) API to build a predictive model using the fastai
+          library. It collects game data from 2015 to 2021, preprocesses it, and trains a neural network to predict the
+          margin of victory in college football games. I would soon like to implement predictions for hypothetical
+          matchups, showcasing its utility in forecasting future game outcomes.
+        </p>
+        <a href="#" target="_blank" class="project-link">View in Github</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/proteinPro.png" alt="more-coming" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Protein Pro</h3>
+        <p class="project-details">
+          Protein Pro is a web-based nutrition tracking app designed to simplify the management of daily dietary intake.
+          Users can easily input their meals and monitor calorie, protein, carbohydrate, fat, saturated fat, and sodium
+          levels. Utilizing React, this user-friendly application provides a seamless experience, making it effortless
+          to maintain a balanced diet and track progress toward nutrition goals.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/myWebsite.png" alt="this-website" loading="lazy" class="project-pic" />
+        <h3 class="project-title">This Website!</h3>
+        <p class="project-details">
+          My personal corner on the internet, where I share my journey as a software engineer. It's a dynamic and
+          visually appealing site designed to introduce me, showcase my skills, and display some of my recent projects.
+          With smooth scrolling and cool animations, I look forward to further development. Up next: A gallery
+          showcasing my favorite bike ride pictures!
+        </p>
+        <a href="#" target="_blank" class="project-link">View in Github</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Icons -->
+  <div class="socials">
+    <!-- Social media icons and links -->
+    <a href="#" target="_blank">
+      <img src="assets/icons/icons8-linkedin-48.png" alt="Linkedin" loading="lazy" class="socicon" />
+    </a>
+    <a href="#" target="_blank">
+      <img src="assets/icons/icons8-email-48.png" alt="Email" loading="lazy" class="socicon" />
+    </a>
+    <a href="#" target="_blank">
+      <img src="assets/icons/icons8-github-48.png" alt="Github" loading="lazy" class="socicon" />
+    </a>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ionicons library for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
