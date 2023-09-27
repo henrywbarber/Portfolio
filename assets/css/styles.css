@@ -144,12 +144,8 @@ nav ul {
   height: 92vh;
 }
 
-/* Styles for hero text and bio */
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+.hero-img-mobile {
+  display: none;
 }
 
 /* Style for hero image container */
@@ -162,7 +158,7 @@ nav ul {
 }
 
 /* Style for hero image */
-.hero img {
+.hero-img {
   transform: scale(1.05);
   width: 25rem;
   height: 32.5rem;
@@ -173,7 +169,7 @@ nav ul {
 }
 
 /* Hover effect for hero image */
-.hero img:hover {
+.hero-img:hover {
   transform: scale(1.1);
   width: 27.5rem;
   height: 35rem;
@@ -183,11 +179,22 @@ nav ul {
 
 /* Style for the bio section */
 .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
   width: 16rem;
-  /* padding: 0.625rem; */
-  padding-top: 0.625rem;
   padding-bottom: 0;
+  padding-top: 0;
   margin-right: 4rem;
+}
+
+.bio-title-mobile {
+  display: none;
+  font-size: 5rem;
+  font-family: 'Comic Sans';
+  font-weight: var(--bolder-font);
+  color: var(--highlight-shadow);
 }
 
 /* Style for the hero title (first name) */
@@ -303,15 +310,19 @@ nav ul {
   margin-bottom: 1rem;
 }
 
-/* Style for individual project containers */
-.project-container {
+/* Style for project cards used in the projects section */
+.project-card {
+  background-color: #fff;
   text-align: center;
   width: 21.875rem;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 1rem;
+  margin: 10px;
 }
 
 /* Style for project descriptions */
-.project-container p {
+.project-card p {
   padding: 0.4rem;
 }
 
@@ -323,77 +334,6 @@ nav ul {
 /* Style for project details */
 .project-details {
   margin-bottom: var(--bottom-margin);
-}
-
-/* Style for the "Contact" section */
-.contact {
-  margin-top: 2rem;
-}
-
-/* Style for the contact section title */
-.contact h2 {
-  text-align: center;
-  margin-bottom: var(--bottom-margin-2);
-}
-
-/* Style for the contact form container */
-.contact-form-container {
-  max-width: 40.75rem;
-  margin: 0 auto;
-  padding: 0.938rem;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-}
-
-/* Style for contact form labels */
-.contact-form-container label {
-  line-height: 2.7em;
-  font-weight: var(--bold-font);
-  color: var(--primary-color);
-}
-
-/* Style for the contact form textarea */
-.contact-form-container textarea {
-  min-height: 6.25rem;
-  font-size: 14px;
-}
-
-/* Style for contact form input fields */
-.contact-form-container .input-field {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-  border: 2px outset var(--primary-color);
-  font-size: 0.875rem;
-  outline: none;
-}
-
-/* Style for input field placeholders */
-.input-field::placeholder {
-  padding: 0.5rem;
-  color: var(--primary-color);
-}
-
-/* Style for the submit button in the contact form */
-.submit-btn {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: var(--bold-font);
-  transition: var(--transition);
-}
-
-/* Hover effect for the submit button */
-.submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  cursor: pointer;
 }
 
 /* Style for social media icons */
@@ -442,17 +382,19 @@ footer {
   margin: 10px;
 }
 
-/* Style for project cards used in the projects section */
-.project-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
+
+
+/* ... Your existing CSS ... */
 
 /* Media query for screens with a maximum width of 720px (mobile devices) */
 @media screen and (max-width: 720px) {
+
+
+  
+  /* Prevent overflow */
+  body {
+    overflow-x: hidden;
+  }
 
   /* Adjust styles for navigation bar on mobile */
   nav {
@@ -498,53 +440,88 @@ footer {
     height: 11.25rem;
   }
 
-  .project-card {
-    width: 21.875rem;
-  }
-
-  /* Adjust project image size for mobile */
-  .project-pic {
-    width: 100%;
-  }
-
   /* Adjust hero section layout for mobile */
   .hero {
-    flex-direction: column-reverse;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
     height: 100%;
-    padding: 0;
+    padding: 1rem;
+    padding-top: 0;
+    animation: none;
+  }
+
+  .hero-img-mobile {
+    display: block !important;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5%;
+    box-shadow: 5px 5px 8px rgb(52, 52, 52);
+    margin: 1rem;
   }
 
   /* Adjust hero image size for mobile */
-  .hero img {
-    width: 18rem;
-    height: 24rem;
+  .hero-img-container {
+    display: none;
   }
-
+  
   /* Adjust bio section width for mobile */
   .bio {
-    width: 100%;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    animation: none;
+    margin-right:0;
   }
 
+  .bio-title-mobile {
+    display: contents;
+    font-size: 3rem;
+  }
+  
   /* Fine-tune styles for hero titles on mobile */
   .bio-title-H {
-    padding: 0.3rem;
+    display: none;
   }
-
+  
   .bio-title-B {
-    padding: 0.3rem;
+    display: none;
   }
-
+  
   /* Reset margin for bio description on mobile */
   .bio-description {
     margin: 0;
   }
-
+  
   /* Adjust margin for bio text paragraphs on mobile */
   .bio-text {
     margin-bottom: var(--bottom-margin);
+  }
+  
+  .more-about {
+    padding: 2rem;
+    padding-top:0;
+  }
+
+  .skills {
+    padding: 1rem;
+    padding-bottom: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .skills h2 {
+    padding: 1rem;
   }
 
   /* Adjust layout for skills section on mobile */
@@ -552,38 +529,51 @@ footer {
     flex-direction: column;
   }
 
+  .skills-wrapper img {
+    width: 60%;
+    height: auto;
+  }
+  
   .skills-wrapper .animate__animated {
     margin: 1rem auto;
   }
-
+  
   .skills .animate__animated {
     margin: 0;
+  }
+  
+  .projects {
+    padding: 0;
+    padding-bottom: 3rem;
+    width: 90%;
+  }
+
+  .projects h2 {
+    padding: 1rem;
+  }
+
+ /* Adjust width for project containers on mobile */
+  .projects-container {
+    display: table-row;
+    align-content: center;
+    width: 100% !important;
+    }
+
+  .project-card {
+    width: 100% !important;
+    margin: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
 
   /* Adjust margin for projects section title on mobile */
   .projects-title {
-    margin: 1rem 0;
+    margin: 1rem;
   }
 
-  /* Adjust width for project containers on mobile */
-  .project-container {
+  /* Adjust project image size for mobile */
+  .project-pic {
     width: 100%;
   }
-
-  /* Adjust padding for contact form container on mobile */
-  .contact-form-container {
-    max-width: 100%;
-    padding: 1rem;
-  }
-
-  /* Adjust margin for contact section title on mobile */
-  .contact h2 {
-    margin-bottom: var(--bottom-margin);
-  }
-
-  /* Adjust font size and line height for contact form labels on mobile */
-  .contact-form-container label {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
+  
 }
