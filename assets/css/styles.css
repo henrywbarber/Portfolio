@@ -382,14 +382,8 @@ footer {
   margin: 10px;
 }
 
-
-
-/* ... Your existing CSS ... */
-
 /* Media query for screens with a maximum width of 720px (mobile devices) */
 @media screen and (max-width: 720px) {
-
-
   
   /* Prevent overflow */
   body {
@@ -400,38 +394,25 @@ footer {
   nav {
     padding: 1.5rem 1rem;
   }
-
-  nav ul {
-    position: fixed;
-    background-color: var(--bg-color);
-    flex-direction: column;
-    top: 86px;
-    left: 10%;
-    width: 80%;
-    text-align: center;
-    transform: translateX(120%);
-    transition: transform 0.3s;
-    z-index: 1;
+  
+  /* Display the email link on mobile */
+  .email-link {
+    display: block;
+    padding-right: 1rem;
   }
 
-  /* Activate the mobile navigation menu when it's active */
-  nav ul.active {
-    transform: translateX(0);
+  nav ul {
+    display: none;
   }
 
   /* Display the burger menu button on mobile */
   .burger-menu {
-    display: block;
+    display: none;
   }
 
   /* Adjust styles for icon content alignment on mobile */
   .icon-content {
     justify-content: start;
-  }
-
-  /* Hide email link on mobile */
-  .email-link {
-    display: none;
   }
 
   /* Adjust card sizes for mobile devices */
