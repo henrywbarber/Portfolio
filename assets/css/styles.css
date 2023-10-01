@@ -1,8 +1,12 @@
 /*------------------------------------------------
   File: style.css
   Description: Welcome to the style sheet. This is where all the magic happens obviously. Below are all attributes that have been styled.
+  Resources: 
+  - https: //www.freecodecamp.org/news how-to-build-a-developer-portfolio-website/
+  - https: //colorlib.com/wp/best-portfolio-websites/
+  - https: //chat.openai.com/
   Author: Henry Barber
-  Date: 09/26/2023
+  Date: 10/01/2023
 -----------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
@@ -268,8 +272,8 @@ nav ul {
 }
 
 /* Style for the "Skills" section header */
-.skill-header {
-  margin-bottom: 1rem;
+.skill h2 {
+  margin-bottom: 5rem;
 }
 
 /* Style for individual skill items */
