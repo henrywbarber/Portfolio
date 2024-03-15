@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+
+/* Define global CSS variables */
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: rgb(234, 231, 220);
+  --primary-color: #D8C3A5;
+  --primary-shadow: #bba98f;
+  --secondary-color: #8E8D8A;
+  --secondary-shadow: #777673;
+  --highlight-color: #E98074;
+  --highlight-shadow: #E85A4F;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+/* Enable smooth scrolling for the entire HTML document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles for unordered lists */
+ul {
+  list-style-type: none;
+}
+
+/* Style for anchor (link) elements */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Hover effect for links */
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Global styles for the body of the page */
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+/* Style for sections with a maximum width and centered alignment */
+section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Styles for the navigation bar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-weight: var(--bold-font);
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--bg-color);
+  border: 5px solid;
+  border-image: linear-gradient(0deg, rgba(82, 77, 58, 0.1), rgba(234, 231, 220, 0.90)) 75;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+/* Style for the navigation logo */
+nav img {
+  height: 2.5rem;
+  width: 3rem;
+}
+
+/* Style for navigation link icons and text */
+.icon-content {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+}
+
+/* Style for navigation links */
+nav a {
+  color: #333;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Style for navigation link list */
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+/* Style for burger menu button on mobile */
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+/* Style for the hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  max-width: 68.75rem;
+  margin: auto;
+  background-color: var(--bg-color);
+  height: 92vh;
+}
+
+.hero-img-mobile {
+  display: none;
+}
+
+/* Style for hero image container */
+.hero-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+}
+
+/* Style for hero image */
+.hero-img {
+  transform: scale(1.05);
+  width: 25rem;
+  height: 32.5rem;
+  object-fit: cover;
+  border-radius: 1.5%;
+  box-shadow: 10px 15px 25px rgb(52, 52, 52);
+  transition: transform 0.3s, box-shadow 0.35s, border-radius 0.4s, width 0.3s, height 0.3s;
+}
+
+/* Hover effect for hero image */
+.hero-img:hover {
+  transform: scale(1.1);
+  width: 27.5rem;
+  height: 35rem;
+  box-shadow: 4px 10px 16px rgba(0, 0, 0, 0.7);
+  border-radius: 3%;
+}
+
+/* Style for the bio section */
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 16rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-right: 4rem;
+}
+
+.bio-title-mobile {
+  display: none;
+  font-size: 5rem;
+  font-family: 'Comic Sans';
+  font-weight: var(--bolder-font);
+  color: var(--highlight-shadow);
+}
+
+/* Style for the hero title (first name) */
+.bio-title-H {
+  font-size: 5rem;
+  font-family: 'Comic Sans';
+  font-weight: var(--bolder-font);
+  color: var(--highlight-shadow);
+  transition: font-size 0.2s, padding 0.2s;
+}
+
+/* Hover effect for hero title (first name) */
+.bio-title-H:hover {
+  font-size: 4rem;
+  padding: 0.5rem;
+}
+
+/* Style for the hero title (last name) */
+.bio-title-B {
+  font-size: 5rem;
+  padding-left: 4rem;
+  font-family: 'Comic Sans';
+  font-weight: var(--bolder-font);
+  color: var(--highlight-shadow);
+  transition: font-size 0.2s, padding 0.2s;
+}
+
+/* Hover effect for hero title (last name) */
+.bio-title-B:hover {
+  font-size: 4rem;
+  padding: 0.5rem 5rem;
+}
+
+/* Style for bio description */
+.bio-description {
+  margin-right: -10rem;
+}
+
+/* Style for bio text paragraphs */
+.bio-text {
+  margin-top: 1rem;
+  margin-bottom: var(--bottom-margin);
+}
+
+/* Style for the "More About" section */
+.more-about {
+  background-color: var(--bg-color);
+  padding: 6rem;
+  padding-bottom: 0;
+}
+
+/* Style for the "More About" section title */
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+/* Style for paragraphs in the "More About" section */
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+/* Style for the "Skills" section */
+.skills {
+  padding: 6rem;
+  padding-bottom: 0;
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+}
+
+/* Style for the "Skills" section header */
+.skill h2 {
+  margin-bottom: 5rem;
+}
+
+/* Style for individual skill items */
+.skill-item {
+  padding: 1.25rem;
+}
+
+/* Style for icon elements */
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+/* Style for the "Projects" section */
+.projects {
+  background-color: var(--bg-color);
+  padding: 6rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+/* Style for project images */
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+/* Style for the projects container */
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the projects section title */
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Style for project cards used in the projects section */
+.project-card {
+  background-color: #fff;
+  text-align: center;
+  width: 21.875rem;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 1rem;
+  margin: 10px;
+}
+
+/* Style for project descriptions */
+.project-card p {
+  padding: 0.4rem;
+}
+
+/* Style for project titles */
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+/* Style for project details */
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+/* Style for social media icons */
+.socials {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+}
+
+/* Style for individual social media icons */
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Style for the scroll-up button */
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Style for the up arrow icon */
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Style for the footer section */
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+/* Style for icon cards used in the projects section */
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Media query for screens with a maximum width of 720px (mobile devices) */
+@media screen and (max-width: 720px) {
+
+  /* Prevent overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Adjust styles for navigation bar on mobile */
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Display the email link on mobile */
+  .email-link {
+    display: block;
+    padding-right: 1rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  /* Display the burger menu button on mobile */
+  .burger-menu {
+    display: none;
+  }
+
+  /* Adjust styles for icon content alignment on mobile */
+  .icon-content {
+    justify-content: start;
+  }
+
+  /* Adjust card sizes for mobile devices */
+  .icon-card {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+
+  /* Adjust hero section layout for mobile */
+  .hero {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 1rem;
+    padding-top: 0;
+    animation: none;
+  }
+
+  .hero-img-mobile {
+    display: block !important;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5%;
+    box-shadow: 5px 5px 8px rgb(52, 52, 52);
+    margin: 1rem;
+  }
+
+  /* Adjust hero image size for mobile */
+  .hero-img-container {
+    display: none;
+  }
+
+  /* Adjust bio section width for mobile */
+  .bio {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    animation: none;
+    margin-right: 0;
+  }
+
+  .bio-title-mobile {
+    display: contents;
+    font-size: 3rem;
+  }
+
+  /* Fine-tune styles for hero titles on mobile */
+  .bio-title-H {
+    display: none;
+  }
+
+  .bio-title-B {
+    display: none;
+  }
+
+  /* Reset margin for bio description on mobile */
+  .bio-description {
+    margin: 0;
+  }
+
+  /* Adjust margin for bio text paragraphs on mobile */
+  .bio-text {
+    margin-bottom: var(--bottom-margin);
+  }
+
+  .more-about {
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  .skills {
+    padding: 1rem;
+    padding-bottom: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .skills h2 {
+    padding: 1rem;
+  }
+
+  /* Adjust layout for skills section on mobile */
+  .skills-wrapper {
+    flex-direction: column;
+  }
+
+  .skills-wrapper img {
+    width: 60%;
+    height: auto;
+  }
+
+  .skills-wrapper .animate__animated {
+    margin: 1rem auto;
+  }
+
+  .skills .animate__animated {
+    margin: 0;
+  }
+
+  .projects {
+    padding: 0;
+    padding-bottom: 3rem;
+    width: 90%;
+  }
+
+  .projects h2 {
+    padding: 1rem;
+  }
+
+  /* Adjust width for project containers on mobile */
+  .projects-container {
+    display: table-row;
+    align-content: center;
+    width: 100% !important;
+  }
+
+  .project-card {
+    width: 100% !important;
+    margin: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust margin for projects section title on mobile */
+  .projects-title {
+    margin: 1rem;
+  }
+
+  /* Adjust project image size for mobile */
+  .project-pic {
+    width: 100%;
+  }
+
+}
