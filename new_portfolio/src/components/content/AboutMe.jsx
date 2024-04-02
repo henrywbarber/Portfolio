@@ -4,9 +4,9 @@ import portrait from '../../assets/images/portrait.jpg';
 
 function AboutMe() {
     return (
-        <Container>
+        <Container style={{ paddingTop: "5rem"}}>
             <Row>
-                <Col style={{ padding: "2.5rem", }}>
+                <Col style={{ padding: "8.5rem" }}>
                     <h1>Hello, I'm</h1>
                     <h1 style={{ fontFamily: "Comic Sans", fontSize: "4rem", fontWeight: "900", textAlign: "center", color: "#E85A4F" }}>Henry</h1>
                     <h2>Welcome to my portfolio!</h2>

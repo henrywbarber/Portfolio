@@ -24,27 +24,23 @@ html {
 }
 
 /* Reset default margin, padding, and box-sizing for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* Remove default list styles for unordered lists */
-ul {
+/* ul {
   list-style-type: none;
-}
+} */
 
 /* Style for anchor (link) elements */
-a {
+/* a {
   text-decoration: none;
   color: var(--primary-color);
-}
+} */
 
 /* Hover effect for links */
-a:hover {
+/* a:hover {
   color: var(--secondary-color);
-}
+} */
 
 /* Global styles for the body of the page */
 body {
@@ -53,13 +49,13 @@ body {
 }
 
 /* Style for sections with a maximum width and centered alignment */
-section {
+/* section {
   max-width: 1100px;
   margin: auto;
-}
+} */
 
 /* Styles for the navigation bar */
-nav {
+/* nav {
   position: sticky;
   top: 0;
   left: 0;
@@ -75,57 +71,57 @@ nav {
   border-left: none;
   border-top: none;
   border-right: none;
-}
+} */
 
 /* Style for the navigation logo */
-nav img {
+/* nav img {
   height: 2.5rem;
   width: 3rem;
-}
+} */
 
 /* Style for navigation link icons and text */
-.icon-content {
+/* .icon-content {
   display: flex;
   align-items: center;
-}
+} */
 
-.email-icon {
+/* .email-icon {
   width: 24px;
   height: 24px;
   margin-right: 2px;
-}
+} */
 
 /* Style for navigation links */
-nav a {
+/* nav a {
   color: #333;
   transition: var(--transition);
   text-decoration: none;
-}
+} */
 
 /* Hover effect for navigation links */
-nav a:hover {
+/* nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
-}
+} */
 
 /* Style for navigation link list */
-nav ul {
+/* nav ul {
   display: flex;
   gap: 1.9rem;
-}
+} */
 
 /* Style for burger menu button on mobile */
-.burger-menu {
+/* .burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   display: none;
-}
+} */
 
 /* Style for the hero section */
-.hero {
+/* .hero {
   display: flex;
   justify-content: center;
   gap: 6rem;
@@ -133,23 +129,23 @@ nav ul {
   margin: auto;
   background-color: var(--bg-color);
   height: 92vh;
-}
+} */
 
-.hero-img-mobile {
+/* .hero-img-mobile {
   display: none;
-}
+} */
 
 /* Style for hero image container */
-.hero-img-container {
+/* .hero-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   margin: auto;
-}
+} */
 
 /* Style for hero image */
-.hero-img {
+/* .hero-img {
   transform: scale(1.05);
   width: 25rem;
   height: 32.5rem;
@@ -157,19 +153,19 @@ nav ul {
   border-radius: 1.5%;
   box-shadow: 10px 15px 25px rgb(52, 52, 52);
   transition: transform 0.3s, box-shadow 0.35s, border-radius 0.4s, width 0.3s, height 0.3s;
-}
+} */
 
 /* Hover effect for hero image */
-.hero-img:hover {
+/* .hero-img:hover {
   transform: scale(1.1);
   width: 27.5rem;
   height: 35rem;
   box-shadow: 4px 10px 16px rgba(0, 0, 0, 0.7);
   border-radius: 3%;
-}
+} */
 
 /* Style for the bio section */
-.bio {
+/* .bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,61 +174,61 @@ nav ul {
   padding-bottom: 0;
   padding-top: 0;
   margin-right: 4rem;
-}
+} */
 
-.bio-title-mobile {
+/* .bio-title-mobile {
   display: none;
   font-size: 5rem;
   font-family: 'Comic Sans';
   font-weight: var(--bolder-font);
   color: var(--highlight-shadow);
-}
+} */
 
 /* Style for the hero title (first name) */
-.bio-title-H {
+/* .bio-title-H {
   font-size: 5rem;
   font-family: 'Comic Sans';
   font-weight: var(--bolder-font);
   color: var(--highlight-shadow);
   transition: font-size 0.2s, padding 0.2s;
-}
+} */
 
 /* Hover effect for hero title (first name) */
-.bio-title-H:hover {
+/* .bio-title-H:hover {
   font-size: 4rem;
   padding: 0.5rem;
-}
+} */
 
 /* Style for the hero title (last name) */
-.bio-title-B {
+/* .bio-title-B {
   font-size: 5rem;
   padding-left: 4rem;
   font-family: 'Comic Sans';
   font-weight: var(--bolder-font);
   color: var(--highlight-shadow);
   transition: font-size 0.2s, padding 0.2s;
-}
+} */
 
 /* Hover effect for hero title (last name) */
-.bio-title-B:hover {
+/* .bio-title-B:hover {
   font-size: 4rem;
   padding: 0.5rem 5rem;
-}
+} */
 
 
 
 /* TODO: ADD BACK SOCIALS ICONS */
 /* Style for social media icons */
-.socials {
+/* .socials {
   display: flex;
   flex-direction: row;
   position: fixed;
   right: 1%;
   bottom: 1%;
-}
+} */
 
 /* Style for individual social media icons */
-.socicon {
+/* .socicon {
   width: 2rem;
   height: 2rem;
-}
+} */
