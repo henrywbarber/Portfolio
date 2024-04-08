@@ -23,6 +23,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Style for the "Skills" section */
+.skills {
+  padding: 6rem;
+  padding-bottom: 0;
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+}
+
+/* Style for individual skill items */
+.icon {
+  padding: 1.25rem;
+  width: 11.875rem;
+  height: 11.25rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
 /* Reset default margin, padding, and box-sizing for all elements */
 
 
