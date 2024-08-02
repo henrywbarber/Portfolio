@@ -10,8 +10,11 @@ import Projects from '../content/Projects'
 
 function Layout() {
     return (
-        <div>
-            <Navbar fixed="top" bg="light" variant="light" style={{ fontSize: "1.25rem" }} >
+        <div style={{
+            minHeight: '100vh',
+            background: 'radial-gradient(circle, #6482AD, #7FA1C3, #E2DAD6, #F5EDED)'
+        }}>
+            <Navbar fixed="top" style={{ fontSize: "1.25rem", backgroundColor: "#6482AD"}}>
                 <Container fluid>
                     <Navbar.Brand href="#home" to="/">
                         <Image
@@ -27,8 +30,7 @@ function Layout() {
                         <Nav.Link href="#skills">Skills</Nav.Link>
                         <Nav.Link href="#projects">Projects</Nav.Link>
                     </Nav>
-                    <Nav.Link style={{ alignSelf: "center" }}>Quick Links: </Nav.Link>
-
+                    
                     <Nav.Link href="https://www.linkedin.com/in/henrywbarber">
                         <Image src={linkedInLogo} alt="Linkedin" style={{ width: "2rem", height: "2rem" }} />
                     </Nav.Link>

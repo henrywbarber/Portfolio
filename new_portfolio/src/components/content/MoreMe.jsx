@@ -1,8 +1,9 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 function MoreMe() {
     return (
-        <div style={{ textAlign: 'center', marginRight: '15%', marginLeft: '15%' }}>
+        <Container style={{ padding: "3rem 5rem 0 5rem", textAlign: 'center' }}>
             <h2>More About Me</h2>
             <p>
                 Born and raised in the Wrigleyville area of Chicago, I attended Albert G. Lane Technical College Preparatory High
@@ -17,7 +18,7 @@ function MoreMe() {
                 lake life, riding bikes throughout the area's great trails such as the Badger State Trail, and reading books at
                 Lake Mendota's Memorial Union Terrace. So far, my longest bike ride has been the Badger Challenge 100k. I also enjoy exploring campus, I swear there are new buildings and resturants to check out every week. As of recent, I've been making a fool of myself in the intermural soccer, flag football, and volleyball leagues with my friends.
             </p>
-        </div>
+        </Container>
     );
 }
 
