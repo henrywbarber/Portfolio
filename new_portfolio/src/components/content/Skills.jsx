@@ -9,32 +9,27 @@ import Jiralogo from '../../assets/icons/icons8-jira-48.svg';
 
 function Skills() {
     return (
-        <Container style={{
-            textAlign: 'center',
-            padding: "3rem 6rem 0 6rem",
-            margin: "auto",
-            maxWidth: "100%",
-            width: "100%"
-        }}>
-            <h2>My Skills</h2>
-            <Row xs={1} md={2} lg={3} className="g-4">
+        // <Container style={{ margin: "auto", maxWidth: "100%", width: "100%" }}>
+        <Container>
+            <h2 style={{ textAlign: "center", paddingBottom: "0.75rem" }}>My Skills</h2>
+            <Row xs={2} md={3} className="g-4 text-center">
                 <Col>
-                    <img src={CPPlogo} alt="C++" loading="lazy" className="icon icon-card" />
+                    <img src={CPPlogo} alt="C++" loading="lazy" className="icon" />
                 </Col>
                 <Col>
-                    <img src={Javalogo} alt="Java" loading="lazy" className="icon icon-card" />
+                    <img src={Javalogo} alt="Java" loading="lazy" className="icon" />
                 </Col>
                 <Col>
-                    <img src={Pythonlogo} alt="Python" loading="lazy" className="icon icon-card" />
+                    <img src={Pythonlogo} alt="Python" loading="lazy" className="icon" />
                 </Col>
                 <Col>
-                    <img src={SQLlogo} alt="MySQL" loading="lazy" className="icon icon-card" />
+                    <img src={SQLlogo} alt="MySQL" loading="lazy" className="icon" />
                 </Col>
                 <Col>
-                    <img src={VSlogo} alt="VS" loading="lazy" className="icon icon-card" />
+                    <img src={VSlogo} alt="VS" loading="lazy" className="icon" />
                 </Col>
                 <Col>
-                    <img src={Jiralogo} alt="Jira" loading="lazy" className="icon icon-card" />
+                    <img src={Jiralogo} alt="Jira" loading="lazy" className="icon" />
                 </Col>
             </Row>
         </Container>

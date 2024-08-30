@@ -7,10 +7,22 @@ import cnnIMG from '../../assets/images/cnn.png';
 
 function Projects() {
     return (
-        <Container style={{ padding: "3rem 1rem 0 1rem" }}>
-            <h2 style={{ textAlign: "center" }}>A Few Recent Projects</h2>
+        <Container style={{ padding: "3rem 1rem 3rem 1rem" }}>
+            <h2 style={{ textAlign: "center", paddingBottom: "0.75rem" }}>A Few Recent Projects</h2>
 
             <Row xs={1} md={2} className="g-4">
+                <Col>
+                    <Card>
+                        <Card.Img variant="top" src={cnnIMG} alt="cnn-project" />
+                        <Card.Body>
+                            <Card.Title>Convolutional Neural Network</Card.Title>
+                            <Card.Text>
+                                This project implements a VGGNet-style convolutional neural network. It allows for customizable hyperparameters for optimal training, such as Ioffe & Szegedy batch normalization. Users can also switch between an SGD momentum loss function or an adam loss function, change layer number and size, and adjust filters, pooling, and weight distribution. This project successfully performed image classification tasks on the CIFAR-10 dataset using via machine learning but could still be further optimized.
+                            </Card.Text>
+                            <Button variant="secondary" href="https://github.com/henrywbarber/Convolutional_Neural_Network/blob/main/convolutional_networks.ipynb" target="_blank">View in Github</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
                 <Col>
                     <Card>
                         <Card.Img variant="top" src={marginPredictorImg} alt="cfb-outcome" />
@@ -43,26 +55,29 @@ function Projects() {
                 </Col>
                 <Col>
                     <Card>
-                        <Card.Img variant="top" src={cnnIMG} alt="cnn-project" />
+                        <div className="card-img-placeholder">
+                            <span>Coming Soon...</span>
+                        </div>
                         <Card.Body>
-                            <Card.Title>Convolutional Neural Network</Card.Title>
+                            <Card.Title>Transit Tracker</Card.Title>
                             <Card.Text>
-                                This project implements a VGGNet-style convolutional neural network. It allows for customizable hyperparameters for optimal training, such as Ioffe & Szegedy batch normalization. Users can also switch between an SGD momentum loss function or an adam loss function, change layer number and size, and adjust filters, pooling, and weight distribution. This project successfully performed image classification tasks on the CIFAR-10 dataset using via machine learning but could still be further optimized.
+                                Sick of Chicago's inconsistant public transit wait times? Transit Tracker directly accesses the Chicago Transit Authorities Bus and Train data and allows users to check on wait times ahead of time. Fequent a stop or two? The favorite tab allows users to easily access their common routes.
                             </Card.Text>
-                            <Button variant="secondary" href="#" target="_blank">TODO</Button>
+                            <Button variant="secondary" disabled>Coming Soon</Button>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col>
                     <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
+                        <div className="card-img-placeholder">
+                            <span>Coming Soon...</span>
+                        </div>
                         <Card.Body>
-                            <Card.Title>Card title</Card.Title>
+                            <Card.Title>KartKings</Card.Title>
                             <Card.Text>
-                                This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
+                                For more than casual Mario Kart competetors. Track point totals between your friends and finally crown the king of the track. Upon logging in, users can log races with others and begin thier climb to the top of the hill. Offering a final and offical comparison between competors over all shared races.
                             </Card.Text>
+                            <Button variant="secondary" disabled>Coming Soon</Button>
                         </Card.Body>
                     </Card>
                 </Col>

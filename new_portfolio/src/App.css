@@ -2,40 +2,48 @@
 
 :root {
   --font-family: 'Open Sans', sans-serif;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
   --bg-color: rgb(234, 231, 220);
   --primary-color: #6482AD;
   --primary-shadow: #3D587D;
   --secondary-color: #7FA1C3;
   --secondary-shadow: #6D90B3;
-  --highlight-color: #E98074;
-  --highlight-shadow: #E85A4F;
-  /* --primary-color: #D8C3A5;
-  --primary-shadow: #bba98f;
-  --secondary-color: #8E8D8A;
-  --secondary-shadow: #777673;
-  --highlight-color: #E98074;
-  --highlight-shadow: #E85A4F; */
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-  --transition: 0.3s;
 }
 
-/* Enable smooth scrolling for the entire HTML document */
 html {
   scroll-behavior: smooth;
 }
 
+/* Following are small screen defaults */
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
 }
 
+.MyIntro {
+  text-align: center;
+}
+
+.Hello {
+  font-size: 2.5rem;
+}
+
+.Henry {
+  font-family: "Comic Sans";
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.Welcome {
+  text-align: center;
+}
+
+.MoreAboutMe {
+  padding: 0rem 1rem 0 1rem;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 0.25rem;
   font-weight: bold;
 }
 
@@ -45,25 +53,128 @@ h2 {
 }
 
 h3 {
-  font-size: 1.55rem;
-}
-
-h4 {
-  font-size: 1.15rem;
-}
-
-p {
   font-size: 1.25rem;
 }
 
-/* Style for individual skill items */
+h4 {
+  font-size: 0.85rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .icon {
-  padding: 1.25rem;
-  width: 11.875rem;
-  height: 11.25rem;
-  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  background-color: var(--bg-color);
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
+}
+
+
+.card {
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #FFFFFF;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-shadow);
+  border-color: var(--secondary-shadow);
+}
+
+.card-img-placeholder {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid var(--secondary-color);
+  text-align: center;
+}
+
+.card-img-placeholder span {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Following are applied for larger screens */
+@media (min-width: 1024px) {
+  body {
+      font-family: var(--font-family);
+      background-color: var(--bg-color);
+    }
+
+  .MyIntro {
+    padding: 2.5vh 0 1rem 0;
+    text-align: left;
+  }
+
+  .MyIntro h3, h4 {
+    padding-left: 1rem;
+  }
+
+  .Hello {
+    font-size: 3.5rem;
+  }
+
+  .Henry {
+    font-family: "Comic Sans";
+    font-size: 4rem;
+    font-weight: 900;
+    color: #6482AD;
+  }
+
+  .Welcome {
+    padding: 27.5vh 0 0 0;
+    text-align: left;
+  }
+
+  .MoreAboutMe {
+    padding: 3rem 1rem 0 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.85rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.15rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+    background-color: var(--bg-color);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+  }
 }
