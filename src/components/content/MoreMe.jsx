@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 
 function MoreMe() {
     return (
-        <Container class="MoreAboutMe">
+        <Container className="MoreAboutMe">
                 <h2 style={{textAlign: "center"}}>More About Me</h2>
                 <p>
                     Born and raised in the Wrigleyville area of Chicago, I attended Albert G. Lane Technical College Preparatory High

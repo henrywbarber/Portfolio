@@ -3,6 +3,7 @@
 :root {
   --font-family: 'Open Sans', sans-serif;
   --bg-color: rgb(234, 231, 220);
+  --off-white: #F5F5F5;
   --primary-color: #6482AD;
   --primary-shadow: #3D587D;
   --secondary-color: #7FA1C3;
@@ -16,7 +17,11 @@ html {
 /* Following are small screen defaults */
 body {
   font-family: var(--font-family);
-  background-color: var(--bg-color);
+  background: radial-gradient(circle, var(--primary-color), var(--secondary-color), var(--off-white), var(--off-white));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .MyIntro {
@@ -39,7 +44,7 @@ body {
 }
 
 .MoreAboutMe {
-  padding: 0rem 1rem 0 1rem;
+  padding: 10vh 1rem 0 1rem;
 }
 
 h1 {
@@ -69,11 +74,10 @@ p {
   height: 100%;
   display: block;
   margin: auto;
-  background-color: var(--bg-color);
+  background-color: var(--off-white);
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
-
 
 .card {
   border: 1px solid var(--secondary-color);
@@ -88,7 +92,7 @@ p {
 .btn-secondary {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
-  color: #FFFFFF;
+  color: var(--off-white);
 }
 
 .btn-secondary:hover {
@@ -101,7 +105,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
+  background-color: var(--off-white);
   border-bottom: 1px solid var(--secondary-color);
   text-align: center;
 }
@@ -114,18 +118,18 @@ p {
 
 /* Following are applied for larger screens */
 @media (min-width: 1024px) {
-  body {
-      font-family: var(--font-family);
-      background-color: var(--bg-color);
-    }
 
   .MyIntro {
     padding: 2.5vh 0 1rem 0;
     text-align: left;
   }
 
-  .MyIntro h3, h4 {
-    padding-left: 1rem;
+  .MyIntro h3, h4, p {
+    padding-left: 2rem;
+  }
+  
+  .IntroPad {
+    padding-top: 17.5vh;
   }
 
   .Hello {
@@ -136,7 +140,7 @@ p {
     font-family: "Comic Sans";
     font-size: 4rem;
     font-weight: 900;
-    color: #6482AD;
+    color: var(--primary-color);
   }
 
   .Welcome {
@@ -145,7 +149,7 @@ p {
   }
 
   .MoreAboutMe {
-    padding: 3rem 1rem 0 1rem;
+    padding: 10vh 1rem 0 1rem;
   }
 
   h1 {
@@ -173,7 +177,7 @@ p {
   .icon {
     width: 11.875rem;
     height: 11.25rem;
-    background-color: var(--bg-color);
+    background-color: var(--off-white);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
   }

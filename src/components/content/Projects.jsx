@@ -7,7 +7,7 @@ import cnnIMG from '../../assets/images/cnn.png';
 
 function Projects() {
     return (
-        <Container style={{ padding: "3rem 1rem 3rem 1rem" }}>
+        <Container style={{ padding: "10vh 1rem 3rem 1rem" }}>
             <h2 style={{ textAlign: "center", paddingBottom: "0.75rem" }}>A Few Recent Projects</h2>
 
             <Row xs={1} md={2} className="g-4">
@@ -34,7 +34,7 @@ function Projects() {
                                 margin of victory in college football games. I would soon like to implement predictions for hypothetical
                                 matchups, showcasing its utility in forecasting future game outcomes.
                             </Card.Text>
-                            <Button variant="secondary" href="https://github.com/henrywbarber/MarginPredictor" target="_blank">View in Github</Button>
+                            <Button variant="secondary" href="https://github.com/henrywbarber/MarginPredictor/blob/main/MarginPredictor.ipynb" target="_blank">View in Github</Button>
                         </Card.Body>
                     </Card>
                 </Col>

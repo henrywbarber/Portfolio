@@ -10,7 +10,7 @@ import Jiralogo from '../../assets/icons/icons8-jira-48.svg';
 function Skills() {
     return (
         // <Container style={{ margin: "auto", maxWidth: "100%", width: "100%" }}>
-        <Container>
+        <Container style={{ paddingTop: "10vh" }}>
             <h2 style={{ textAlign: "center", paddingBottom: "0.75rem" }}>My Skills</h2>
             <Row xs={2} md={3} className="g-4 text-center">
                 <Col>
