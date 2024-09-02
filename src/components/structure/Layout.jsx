@@ -24,15 +24,16 @@ function Layout() {
                         />
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="about" smooth={true} duration={100}>
+                        <Nav.Link as={Link} to="about" smooth={true} duration={100} style={{ cursor: 'pointer' }}>
                             About
                         </Nav.Link>
-                        <Nav.Link as={Link} to="skills" smooth={true} duration={100}>
+                        <Nav.Link as={Link} to="skills" smooth={true} duration={100} style={{ cursor: 'pointer' }}>
                             Skills
                         </Nav.Link>
-                        <Nav.Link as={Link} to="projects" smooth={true} duration={100}>
+                        <Nav.Link as={Link} to="projects" smooth={true} duration={100} style={{ cursor: 'pointer' }}>
                             Projects
                         </Nav.Link>
+
                     </Nav>
                     <Nav.Link href="https://www.linkedin.com/in/henrywbarber" target="_blank">
                         <Image src={linkedInLogo} alt="Linkedin" style={{ width: "2rem", height: "2rem" }} />
