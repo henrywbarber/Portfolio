@@ -14,7 +14,7 @@ function Layout() {
         <div>
             <Navbar fixed="top" style={{ fontSize: "1.25rem", backgroundColor: "#6482AD" }}>
                 <Container fluid>
-                    <Navbar.Brand as={Link} to="home" smooth={true} duration={100} offset={"-5rem"}>
+                    <Navbar.Brand as={Link} to="home" smooth={true} duration={100} offset={"-5rem"} style={{ cursor: 'pointer' }}>
                         <Image
                             alt="H Letter Logo"
                             src={logo}
