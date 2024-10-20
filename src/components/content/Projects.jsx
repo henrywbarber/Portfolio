@@ -25,14 +25,26 @@ function Projects() {
                 </Col>
                 <Col>
                     <Card>
+                        {/* <Card.Img variant="top" src={} alt="" /> */}
+                        <div className="card-img-placeholder">
+                            <span>Check Me Out in GitHub!</span>
+                        </div>
+                        <Card.Body>
+                            <Card.Title>Barber Shell</Card.Title>
+                            <Card.Text>
+                                This project implements a custom Unix-based shell from scratch, with select custom built-in functions. This shell, called barber, serves as a command-line interpreter, emulating the fundamental functionality of popular shells like bash or zsh, but with a simpler design. The shell functions in two modes, interactive mode which reads user input and executes commands, and batch mode which processes commands from a file. The shell supports basic functionality such as forking processes, executing commands, handling I/O redirections, and managing both environment and shell variables.
+                            </Card.Text>
+                            <Button variant="secondary" href="https://github.com/henrywbarber/BarberShell" target="_blank">View in Github</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card>
                         <Card.Img variant="top" src={marginPredictorImg} alt="cfb-outcome" />
                         <Card.Body>
                             <Card.Title>College Football Margin Predictor</Card.Title>
                             <Card.Text>
-                                This project leverages the College Football Data (CFBD) API to build a predictive model using the fastai
-                                library. It collects game data from 2015 to 2021, preprocesses it, and trains a neural network to predict the
-                                margin of victory in college football games. I would soon like to implement predictions for hypothetical
-                                matchups, showcasing its utility in forecasting future game outcomes.
+                                This project leverages the College Football Data (CFBD) API to build a predictive model using the fastai library. It collects game data from 2015 to 2021, preprocesses it, and trains a neural network to predict the margin of victory in college football games. I would soon like to implement predictions for hypothetical matchups, showcasing its utility in forecasting future game outcomes.
                             </Card.Text>
                             <Button variant="secondary" href="https://github.com/henrywbarber/MarginPredictor/blob/main/MarginPredictor.ipynb" target="_blank">View in Github</Button>
                         </Card.Body>
@@ -44,10 +56,7 @@ function Projects() {
                         <Card.Body>
                             <Card.Title>Protein Pro</Card.Title>
                             <Card.Text>
-                                Protein Pro is a web-based nutrition tracking app designed to simplify the management of daily dietary intake.
-                                Users can easily input their meals and monitor calorie, protein, carbohydrate, fat, saturated fat, and sodium
-                                levels. Utilizing React, this user-friendly application provides a seamless experience, making it effortless
-                                to maintain a balanced diet and track progress toward nutrition goals.
+                                Protein Pro is a web-based nutrition tracking app designed to simplify the management of daily dietary intake. Users can easily input their meals and monitor calorie, protein, carbohydrate, fat, saturated fat, and sodium levels. Utilizing React, this user-friendly application provides a seamless experience, making it effortless to maintain a balanced diet and track progress toward nutrition goals.
                             </Card.Text>
                             <Button variant="secondary" href="https://henrywbarber.github.io/protein_pro/" target="_blank">Check it Out</Button>
                         </Card.Body>

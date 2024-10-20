@@ -37,7 +37,7 @@ const AboutMe = () => {
                                 I'm an aspiring problem solver at The University of Wisconsin - Madison. I'm currently pursuing a Bachelor of Science in Computer Science along with a Minor in Mathematics; expecting to graduate in May of 2025.
                             </p>
                             <p>
-                                Some of my interests outside of class consist of road biking, intramural sports with friends, and listening to music.
+                                Some of my interests outside of class consist of anything and everything biking, playing intramural sports with friends, and exploring the depths of spotify.
                             </p>
                         </div>
                     </Row>

@@ -6,17 +6,13 @@ function MoreMe() {
         <Container className="MoreAboutMe">
                 <h2 style={{textAlign: "center"}}>More About Me</h2>
                 <p>
-                    Born and raised in the Wrigleyville area of Chicago, I attended Albert G. Lane Technical College Preparatory High
-                    School in Roscoe Village before moving to Madison, Wisconsin, to pursue a further education in Computer Science.
-                    My interest in STEM started from a young age, I attribute my interest to my middle school where I found myself
-                    learning 'Processing' in the fifth grade and later learning how to 3D model, 3D print, and laser cut. I further
-                    explored this interest at Lane Tech, known for its cutting-edge STEM programs. I was able to explore my interests
-                    in the school's maker lab and prove my skills in AP Computer Science-A.
+                    Born and raised in Chicago's Wrigleyville neighborhood, I attended Lane Tech College Prep High School in Roscoe Village before moving to Madison, Wisconsin, to further my education in Computer Science.
                 </p>
                 <p>
-                    Now in Madison, I find myself enjoying
-                    lake life, riding bikes throughout the area's great trails such as the Badger State Trail, and reading books at
-                    Lake Mendota's Memorial Union Terrace. So far, my longest bike ride has been the Badger Challenge 100k. I also enjoy exploring campus, I swear there are new buildings and resturants to check out every week. As of recent, I've been making a fool of myself in the intermural soccer, flag football, and volleyball leagues with my friends.
+                    My passion for STEM began early, sparked in my middle school years when I first learned 'Processing' in fifth grade. From there, I delved into 3D modeling, 3D printing, and laser cutting. Lane Tech, with its renowned STEM programs, provided the perfect environment to nurture these interests, where I honed my skills in the school's maker lab and excelled in AP Computer Science-A.
+                </p> 
+                <p>
+                    In Madison, I found myself further my academic journey along with my other interests. Moving away from the Chicago, I began enjoying all the time I could spend exploring the area's natural beauty. Now, as an executive board member of the cycling club I lead group rides on local trails, from casual rides to longer training sessions through the scenic hills of Lodi, Mazomanie, Cross Plains, Verona, and Blue Mound State Park. I am also lucky enough to travel with my teammates to compete against other collegiate teams, representing the Badgers in our stylish cow-print jerseys. Although I've lived in Madison for over three years, I still enjoy discovering new campus buildings, shops along State Street, and testing my palate at family-owned restaurants. Lately, I've been embracing my playful side by joining intramural flag football, soccer, and volleyball leagues with friends.
                 </p>
         </Container>
     );
