@@ -2,11 +2,11 @@
 
 /* Global.css */
 body {
-  background-color: #121212;
+  background-color: #282c34;
   /* Dark background */
   color: #FFFFFF;
   /* Light text color */
-  font-family: 'Arial', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /* Update font as needed */
 }
 
@@ -22,12 +22,6 @@ a:hover {
   /* Change color on hover */
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #1E1E1E;
-  /* Dark navbar background */
-}
-
 /* Button styles */
 .btn {
   background-color: #BB86FC;
@@ -39,18 +33,6 @@ a:hover {
 .btn:hover {
   background-color: #03DAC5;
   /* Hover effect */
-}
-
-/* Section styles */
-section {
-  background-color: #1E1E1E;
-  /* Dark section backgrounds */
-  padding: 2rem;
-  /* Add padding for better spacing */
-  border-radius: 8px;
-  /* Rounded corners */
-  margin: 1rem 0;
-  /* Space between sections */
 }
 
 /* 

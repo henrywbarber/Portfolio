@@ -1,0 +1,26 @@
+.about-section {
+    padding: 5rem 0;
+    /* Light background for contrast */
+}
+
+.about-image {
+    border-radius: 5%;
+    /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    max-width: 100%;
+    height: auto;
+}
+
+.icon {
+    max-width: 60px;
+    /* Sets a max width for icons */
+    height: auto;
+    transition: transform 0.3s;
+    /* Adds a hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    /* Scales the icon on hover */
+}

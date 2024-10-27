@@ -1,0 +1,41 @@
+/* Navbar.css */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Ensure the navbar is above other content */
+    background-color: rgba(187, 134, 252, 0.95);
+    /* 95% opaque purple background */
+    /* Background color when sticky */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    z-index: 1000;
+    /* Ensure it stays on top */
+}
+
+.mobile {
+    position: absolute;
+    /* Allow it to be positioned relative to the hero section */
+    bottom: 0;
+    /* Position it at the bottom of the hero */
+    left: 0;
+    right: 0;
+    /* Lower than sticky */
+    background-color: transparent;
+    /* Transparent background in mobile state */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.navbar {
+    font-size: 1.25rem;
+    color: black;
+    /* Consistent font size */
+}
+
+/* Optional: Add padding to sections below the navbar when sticky */
+.sticky+.container {
+    padding-top: 4rem;
+    /* Adjust based on navbar height */
+}

@@ -1,13 +1,30 @@
+import React, { useState, useEffect } from 'react';
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import { Link } from 'react-scroll';
 import logo from "../../assets/icons/logo.png";
 import linkedInLogo from "../../assets/icons/icons8-linkedin-48.png";
 import emailLogo from "../../assets/icons/icons8-email-48.png";
 import gitHubLogo from "../../assets/icons/icons8-github-48.png";
+import './Navbar.css'; // Ensure to import your CSS file
 
 function CustomNavbar() {
+    const [isSticky, setIsSticky] = useState(false);
+    const handleScroll = () => {
+        const heroHeight = document.querySelector('.hero').offsetHeight;
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const scrollY = window.scrollY;
+        setIsSticky(scrollY > heroHeight - navbarHeight);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <Navbar fixed="top" style={{ fontSize: "1.25rem", backgroundColor: "#6482AD" }}>
+        <Navbar className={`${isSticky ? 'sticky' : 'mobile'}`} >
             <Container fluid>
                 <Navbar.Brand as={Link} to="home" smooth={true} duration={100} offset={"-5rem"} style={{ cursor: 'pointer' }}>
                     <Image
@@ -19,6 +36,9 @@ function CustomNavbar() {
                     />
                 </Navbar.Brand>
                 <Nav className="me-auto">
+                    <Nav.Link as={Link} to="hero" smooth={true} duration={100} style={{ cursor: 'pointer' }}>
+                        Home
+                    </Nav.Link>
                     <Nav.Link as={Link} to="about" smooth={true} duration={100} style={{ cursor: 'pointer' }}>
                         About
                     </Nav.Link>
