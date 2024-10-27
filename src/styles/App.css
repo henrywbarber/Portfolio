@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* Global.css */
+body {
+  background-color: #121212;
+  /* Dark background */
+  color: #FFFFFF;
+  /* Light text color */
+  font-family: 'Arial', sans-serif;
+  /* Update font as needed */
+}
+
+a {
+  color: #BB86FC;
+  /* Light purple for links */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+a:hover {
+  color: #03DAC5;
+  /* Change color on hover */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #1E1E1E;
+  /* Dark navbar background */
+}
+
+/* Button styles */
+.btn {
+  background-color: #BB86FC;
+  /* Light purple buttons */
+  color: #FFFFFF;
+  /* Button text color */
+}
+
+.btn:hover {
+  background-color: #03DAC5;
+  /* Hover effect */
+}
+
+/* Section styles */
+section {
+  background-color: #1E1E1E;
+  /* Dark section backgrounds */
+  padding: 2rem;
+  /* Add padding for better spacing */
+  border-radius: 8px;
+  /* Rounded corners */
+  margin: 1rem 0;
+  /* Space between sections */
+}
+
+/* 
+
+  :root {
+    --font-family: 'Open Sans', sans-serif;
+    --bg-color: rgb(234, 231, 220);
+    --off-white: #F5F5F5;
+    --primary-color: #6482AD;
+    --primary-shadow: #3D587D;
+    --secondary-color: #7FA1C3;
+    --secondary-shadow: #6D90B3;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+  body {
+    font-family: var(--font-family);
+    background: radial-gradient(circle, var(--primary-color), var(--secondary-color), var(--off-white), var(--off-white));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MyIntro {
+    text-align: center;
+  }
+
+  .Hello {
+    font-size: 2.5rem;
+  }
+
+  .Henry {
+    font-family: "Comic Sans";
+    font-size: 2.75rem;
+    font-weight: 900;
+    color: var(--primary-color);
+  }
+
+  .Welcome {
+    text-align: center;
+  }
+
+  .MoreAboutMe {
+    padding: 10vh 1rem 0 1rem;
+  }
+
+  h1 {
+    font-size: 0.25rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 0.85rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: var(--off-white);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+  }
+
+  .card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .card-img-top {
+    border-bottom: 1px solid var(--secondary-color);
+  }
+
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--off-white);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--secondary-shadow);
+    border-color: var(--secondary-shadow);
+  }
+
+  .card-img-placeholder {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: center;
+  }
+
+  .card-img-placeholder span {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+
+  @media (min-width: 1024px) {
+
+    .MyIntro {
+      padding: 2.5vh 0 1rem 0;
+      text-align: left;
+    }
+
+    .MyIntro h3, h4, p {
+      padding-left: 2rem;
+    }
+    
+    .IntroPad {
+      padding-top: 17.5vh;
+    }
+
+    .Hello {
+      font-size: 3.5rem;
+    }
+
+    .Henry {
+      font-family: "Comic Sans";
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--primary-color);
+    }
+
+    .Welcome {
+      padding: 27.5vh 0 0 0;
+      text-align: left;
+    }
+
+    .MoreAboutMe {
+      padding: 10vh 1rem 0 1rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 1.85rem;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    .icon {
+      width: 11.875rem;
+      height: 11.25rem;
+      background-color: var(--off-white);
+      border-radius: 11px;
+      box-shadow: 0 3px 10px var(--secondary-shadow);
+    }
+  } */
