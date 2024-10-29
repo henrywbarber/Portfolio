@@ -1,38 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global.css */
+:root {
+  --font-family: "Noto Sans", sans-serif;
+  --bg-color: rgb(31, 31, 31);
+  --bg-accent: rgb(42, 42, 42);
+  --off-white: rgb(245, 245, 245);
+  --primary-color: rgb(187, 134, 252);
+  --primary-shadow: rgb(127, 94, 162);
+  --secondary-color: rgb(169, 169, 169);
+  --secondary-shadow: rgb(112, 112, 112);
+}
+
 body {
-  background-color: #282c34;
+  background-color: var(--bg-color);
   /* Dark background */
-  color: #FFFFFF;
+  color: var(--off-white);
   /* Light text color */
-  font-family: 'Open Sans', sans-serif;
-  /* Update font as needed */
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+p {
+  font-size: larger;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 a {
-  color: #BB86FC;
+  color: var(--primary-color);
   /* Light purple for links */
   text-decoration: none;
   /* Remove underline */
 }
 
 a:hover {
-  color: #03DAC5;
+  color: var(--primary-shadow);
   /* Change color on hover */
-}
-
-/* Button styles */
-.btn {
-  background-color: #BB86FC;
-  /* Light purple buttons */
-  color: #FFFFFF;
-  /* Button text color */
-}
-
-.btn:hover {
-  background-color: #03DAC5;
-  /* Hover effect */
 }
 
 /* 

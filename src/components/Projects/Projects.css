@@ -1,0 +1,79 @@
+.projects-section {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.projects-section h1 {
+    border-bottom-style: ridge;
+    border-width: 3px;
+    border-color: var(--primary-color);
+    color: var(--off-white);
+}
+
+.project-row {
+    padding: 1.5rem 0 !important;
+    margin: 0 !important;
+}
+
+.project-card {
+    background-color: var(--bg-accent);
+    color: var(--off-white);
+    border: 4px;
+    border-color: var(--primary-color);
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.left {
+    margin: 0 !important;
+    padding: 3rem 3rem 1rem 6rem !important;
+}
+
+.right {
+    margin: 0 !important;
+    padding: 3rem 6rem 1rem 3rem !important;
+    display: flex;
+    /* Use flex display to align cards correctly */
+    justify-content: flex-end;
+    /* Ensure content aligns to the right */
+}
+
+.card-img-placeholder {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+.card-img-placeholder span {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+button {
+    margin-top: 10px;
+}
