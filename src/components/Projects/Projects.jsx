@@ -15,7 +15,7 @@ const Projects = () => {
         },
         {
             title: "Barber Shell",
-            description: "This project implements a custom Unix-based shell from scratch, with select custom built-in functions. The shell functions in two modes, interactive mode and batch mode, and supports basic functionality such as forking processes and handling I/O redirections.",
+            description: "Barber Shell implements a custom Unix-based shell from scratch. Providing customized built-in functions such as command history, enviornment and local variable manipulation, basic functionality such as forking processes and handling I/O redirections. The shell allowed for two functionalities, in which users can interact directly through command line or provide the program with a file of commands.",
             imageUrl: "", // No image URL
             linkUrl: "https://github.com/henrywbarber/BarberShell",
         },
@@ -54,15 +54,15 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <Row className={`project-row ${index % 2 === 1 ? 'justify-content-end' : ''}`} key={index}>
                         <Card className={`project-card ${index % 2 === 0 ? 'left' : 'right'}`}>
-                            {project.imageUrl ? (
-                                <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
-                            ) : (
-                                <div className="card-img-placeholder">
-                                    <span>Check Me Out in GitHub!</span>
-                                </div>
-                            )}
                             <Card.Body>
                                 <Card.Title>{project.title}</Card.Title>
+                                {project.imageUrl ? (
+                                    <Card.Img className="card-img" variant="top" src={project.imageUrl} alt={project.title} />
+                                ) : (
+                                    <div className="card-img-placeholder">
+                                        <span>Check Me Out in GitHub!</span>
+                                    </div>
+                                )}
                                 <Card.Text>{project.description}</Card.Text>
                                 {project.linkUrl ? (
                                     <Button variant="secondary" href={project.linkUrl} target="_blank">View in Github</Button>

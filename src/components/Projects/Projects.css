@@ -23,24 +23,39 @@
     border: 4px;
     border-color: var(--primary-color);
     border-radius: 3px;
-
-    width: 80%;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: 60%;
 }
 
 .left {
     margin: 0 !important;
-    padding: 3rem 3rem 1rem 6rem !important;
+    padding: 0 3rem 0 6rem !important;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
 }
 
 .right {
     margin: 0 !important;
-    padding: 3rem 6rem 1rem 3rem !important;
-    display: flex;
-    /* Use flex display to align cards correctly */
-    justify-content: flex-end;
-    /* Ensure content aligns to the right */
+    padding: 0 6rem 0 3rem !important;
+    border-top-left-radius: 2.5%;
+    border-bottom-left-radius: 2.5%;
+}
+
+.card-body {
+    align-self: center;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.card-img {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
 }
 
 .card-img-placeholder {
@@ -51,6 +66,8 @@
     background-color: var(--off-white);
     border-bottom: 1px solid var(--secondary-color);
     text-align: center;
+    padding: 1rem 0; 
+    /* TODO: Not working */
 }
 
 .card-img-placeholder span {
@@ -59,21 +76,14 @@
     font-weight: bold;
 }
 
-.card-body {
-    text-align: left;
-    padding: 1.5rem;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .card-text {
-    font-size: 1rem;
-    margin: 15px 0;
+    font-size: larger;
 }
 
-button {
-    margin-top: 10px;
+
+
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--off-white);
 }
