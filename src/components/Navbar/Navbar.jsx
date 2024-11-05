@@ -6,7 +6,7 @@ import './Navbar.css';
 function CustomNavbar() {
     const [isSticky, setIsSticky] = useState(false);
     const [navbarHeight, setNavbarHeight] = useState(0);
-    const navbarRef = useRef(null); // Create a ref for the navbar
+    const navbarRef = useRef(null); 
 
     const handleScroll = () => {
         const heroHeight = document.querySelector('#hero').offsetHeight;
@@ -14,12 +14,10 @@ function CustomNavbar() {
     };
 
     useEffect(() => {
-        // Get the height of the navbar when it mounts
         if (navbarRef.current) {
             setNavbarHeight(navbarRef.current.offsetHeight);
         }
 
-        // Update navbar height on window resize
         const handleResize = () => {
             if (navbarRef.current) {
                 setNavbarHeight(navbarRef.current.offsetHeight);
@@ -41,8 +39,8 @@ function CustomNavbar() {
                     <Nav className="ms-auto">
                         <Nav.Link as={Link} to="hero" smooth={true} duration={100}>Home</Nav.Link>
                         <Nav.Link as={Link} to="about" smooth={true} duration={100}>About</Nav.Link>
-                        <Nav.Link as={Link} to="skills" smooth={true} duration={100}>Skills</Nav.Link>
                         <Nav.Link as={Link} to="projects" smooth={true} duration={100}>Projects</Nav.Link>
+                        <Nav.Link as={Link} to="contact" smooth={true} duration={100}>Contact</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

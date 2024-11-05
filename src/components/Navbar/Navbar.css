@@ -10,7 +10,6 @@
     left: 0;
     right: 0;
     background-color: var(--bg-accent);
-    /* Darker background */
     box-shadow: 0 5px 3px 0 rgba(0, 0, 0, .2);
     transition: all 0.3s ease-in-out;
     z-index: 1000;
@@ -19,7 +18,6 @@
 .navbar {
     font-size: 1.25rem;
     color: var(--off-white);
-    /* Off-white text color */
 }
 
 .nav-link {
@@ -31,15 +29,11 @@
     color: var(--off-white);
 }
 
-/* Change background on hover */
 .nav-link:hover {
     background-color: var(--bg-color);
     color: var(--primary-color);
-    /* Slightly transparent white */
 }
 
-/* Optional: Adjust the active link style */
 .nav-link.active {
     background-color: var(--primary-color);
-    /* Active link highlight */
 }

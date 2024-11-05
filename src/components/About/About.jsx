@@ -11,7 +11,7 @@ import './About.css';
 
 const About = () => {
     return (
-        <Container className="about-section">
+        <Container className="about-section content-section">
             <Row className="text-center mb-5">
                 <Col>
                     <h1>About</h1>

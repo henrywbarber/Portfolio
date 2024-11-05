@@ -34,11 +34,9 @@ const HeroCanvas = () => {
             ctx.fill();
             ctx.closePath();
 
-            // Update dot position
             dot.x += dot.vx;
             dot.y += dot.vy;
 
-            // Bounce off edges
             if (dot.x < 0 || dot.x > ctx.canvas.width) dot.vx *= -1;
             if (dot.y < 0 || dot.y > ctx.canvas.height) dot.vy *= -1;
         }
@@ -51,7 +49,6 @@ const HeroCanvas = () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        // Create initial dots
         for (let i = 0; i < dotCount; i++) {
             dots.current.push(createDot());
         }

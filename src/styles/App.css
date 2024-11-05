@@ -5,7 +5,7 @@
   --bg-color: rgb(31, 31, 31);
   --bg-accent: rgb(42, 42, 42);
   --off-white: rgb(245, 245, 245);
-  --primary-color: rgb(187, 134, 252);
+  --primary-color: rgb(180, 142, 229);
   --primary-shadow: rgb(127, 94, 162);
   --secondary-color: rgb(169, 169, 169);
   --secondary-shadow: rgb(112, 112, 112);
@@ -13,221 +13,52 @@
 
 body {
   background-color: var(--bg-color);
-  /* Dark background */
   color: var(--off-white);
-  /* Light text color */
   font-family: var(--font-family);
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-p {
-  font-size: larger;
+  font-weight: 300 !important;
 }
 
 h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
   font-size: 3.5rem;
+  color: var(--primary-color);
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 20rem;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
 }
 
 h2 {
   font-size: 1.5rem;
 }
 
+p {
+  font-weight: 350;
+  font-size: larger;
+}
+
 a {
   color: var(--primary-color);
-  /* Light purple for links */
   text-decoration: none;
-  /* Remove underline */
 }
 
 a:hover {
   color: var(--primary-shadow);
-  /* Change color on hover */
 }
 
-/* 
-
-  :root {
-    --font-family: 'Open Sans', sans-serif;
-    --bg-color: rgb(234, 231, 220);
-    --off-white: #F5F5F5;
-    --primary-color: #6482AD;
-    --primary-shadow: #3D587D;
-    --secondary-color: #7FA1C3;
-    --secondary-shadow: #6D90B3;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  
-  body {
-    font-family: var(--font-family);
-    background: radial-gradient(circle, var(--primary-color), var(--secondary-color), var(--off-white), var(--off-white));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .MyIntro {
-    text-align: center;
-  }
-
-  .Hello {
-    font-size: 2.5rem;
-  }
-
-  .Henry {
-    font-family: "Comic Sans";
-    font-size: 2.75rem;
-    font-weight: 900;
-    color: var(--primary-color);
-  }
-
-  .Welcome {
-    text-align: center;
-  }
-
-  .MoreAboutMe {
-    padding: 10vh 1rem 0 1rem;
-  }
-
-  h1 {
-    font-size: 0.25rem;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  h4 {
-    font-size: 0.85rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .icon {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    background-color: var(--off-white);
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-  }
-
-  .card {
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .card-img-top {
-    border-bottom: 1px solid var(--secondary-color);
-  }
-
-  .btn-secondary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    color: var(--off-white);
-  }
-
-  .btn-secondary:hover {
-    background-color: var(--secondary-shadow);
-    border-color: var(--secondary-shadow);
-  }
-
-  .card-img-placeholder {
-    height: 15rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--off-white);
-    border-bottom: 1px solid var(--secondary-color);
-    text-align: center;
-  }
-
-  .card-img-placeholder span {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    font-weight: bold;
-  }
-
-
-  @media (min-width: 1024px) {
-
-    .MyIntro {
-      padding: 2.5vh 0 1rem 0;
-      text-align: left;
-    }
-
-    .MyIntro h3, h4, p {
-      padding-left: 2rem;
-    }
-    
-    .IntroPad {
-      padding-top: 17.5vh;
-    }
-
-    .Hello {
-      font-size: 3.5rem;
-    }
-
-    .Henry {
-      font-family: "Comic Sans";
-      font-size: 4rem;
-      font-weight: 900;
-      color: var(--primary-color);
-    }
-
-    .Welcome {
-      padding: 27.5vh 0 0 0;
-      text-align: left;
-    }
-
-    .MoreAboutMe {
-      padding: 10vh 1rem 0 1rem;
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-
-    h2 {
-      font-size: 2.25rem;
-      font-weight: bold;
-    }
-
-    h3 {
-      font-size: 1.85rem;
-      font-weight: bold;
-    }
-
-    h4 {
-      font-size: 1.15rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-    }
-
-    .icon {
-      width: 11.875rem;
-      height: 11.25rem;
-      background-color: var(--off-white);
-      border-radius: 11px;
-      box-shadow: 0 3px 10px var(--secondary-shadow);
-    }
-  } */
+.content-section {
+  padding: 3rem 0 0 0;
+}
